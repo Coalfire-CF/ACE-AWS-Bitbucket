@@ -1,0 +1,28 @@
+variable "bitbucket_cert" {
+  type        = string
+  description = "Certificate for Bitbucket"
+  default     = "bitbucket_cert"
+}
+
+variable "bitbucket_cert_key" {
+  type        = string
+  description = "Certificate key for Bitbucket"
+  default     = "bitbucket_cert_key"
+}
+
+variable "bitbucket_opensearch_cert" {
+  default     = "bitbucket_opensearch_cert"
+  description = "BitBucket Opensearch certificate"
+  type        = string
+}
+
+variable "bitbucket_opensearch_certkey" {
+  default     = "bitbucket_opensearch_certkey"
+  description = "BitBucket Opensaerch certificate key"
+  type        = string
+}
+
+variable "bitbucket_secrets_path" {
+  default = "/production/mgmt/bitbucket/"
+  type    = string
+}
