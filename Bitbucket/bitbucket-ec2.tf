@@ -98,8 +98,8 @@ module "bitbucket" {
       vars = {
         aws_region          = var.aws_region,
         domain_name         = var.domain_name,
-        bitbucket_dl_url    = "https://www.atlassian.com/software/stash/downloads/binary/atlassian-bitbucket-7.21.7-x64.bin"
-        bitbucket_version   = "7.21.7"
+        bitbucket_dl_url    = "https://www.atlassian.com/software/stash/downloads/binary/atlassian-bitbucket-7.21.10-x64.bin"
+        bitbucket_version   = "7.21.10"
         username            = aws_secretsmanager_secret_version.bitbucket_admin_username.secret_string,
         password            = aws_secretsmanager_secret_version.bitbucket_admin_credential.secret_string,
         db_username         = aws_secretsmanager_secret_version.bitbucket_db_username.secret_string,
